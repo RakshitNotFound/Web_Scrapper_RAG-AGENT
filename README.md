@@ -25,3 +25,14 @@ An end-to-end Retrieval-Augmented Generation (RAG) agent built with Node.js that
 ---
 
 ## 📐 Pipeline Architecture
+
+[ GitHub Profile ] ──( Axios/Cheerio )──> [ Filtered Text ]
+│
+( Text Chunking )
+│
+▼
+[ ChromaDB Storage ] <──( Gemini Vectors )── [ Gemini Embeddings ]
+│
+├──( User Search Query )
+▼
+[ Contextual Top Matches ]
